@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      h2 {
+        margin-top: 3rem;
+        margin-bottom: 0;
+      }
+
+      p {
+        max-width: 30rem;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+    </style>
+
+    <h2>
+      <a href="./interactive.html"
+        >Single-page Interactive</a
+      >
+    </h2>
+
+    <p>
+      An example that updates the re-orders the position of
+      squares directly on the page with JavaScript. The
+      animations are created simply by providing each
+      li-element with a unique "view-transition-name" value
+      by means of inline CSS.
+    </p>
+
+    <h2>
+      <a href="./option-a.html">Multi-page Navigation</a>
+    </h2>
+
+    <p>
+      An example that that allows navigation between
+      hardcoded HTML pages, the only difference between them
+      is that the position of the li-elements (and
+      subsequently "view-transition-name") are in different
+      places and all pages have a CSS at-rule for
+      "@view-transition" that is set to "navigation: auto;".
+      There is no JavaScript on any of these pages.
+    </p>
+  </body>
+</html>

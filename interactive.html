@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      a,
+      button {
+        margin: 0 auto;
+        display: inline-block;
+        color: black;
+        font-family: sans-serif;
+        font-size: 3rem;
+        cursor: pointer;
+        padding: 0.5rem 2rem;
+        background: rgba(0, 0, 0, 0.05);
+      }
+
+      a:hover,
+      button:hover {
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      a:active,
+      button:active {
+        background: rgba(0, 0, 0, 0.4);
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+
+      li {
+        width: 10rem;
+        height: 10rem;
+        border: 1px solid black;
+        font-weight: bold;
+        font-size: 3rem;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <a href="./index.html"><< BACK</a>
+      <button id="shuffle">SHUFFLE</button>
+      <ul id="list"></ul>
+    </div>
+  </body>
+
+  <script type="module">
+    const list = document.querySelector("ul");
+    const button = document.querySelector("button");
+
+    const transition = (callback) => {
+      if (!document.startViewTransition) return callback();
+      return document.startViewTransition(callback);
+    };
+
+    const ITEMS = new Array(40)
+      .fill(null)
+      .map((_, i) => i + 1);
+
+    list.innerHTML = ITEMS.map(
+      (inner) =>
+        `<li style="view-transition-name: item-${inner}">${inner}</li>`
+    ).join("");
+
+    const items = [...list.children];
+
+    button.addEventListener("click", (event) => {
+      transition(() => {
+        items.forEach((inner) => {
+          const target =
+            items[Math.floor(Math.random() * items.length)];
+
+          list.insertBefore(inner, target);
+        });
+      });
+    });
+  </script>
+</html>
