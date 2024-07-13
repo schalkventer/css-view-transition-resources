@@ -1,4 +1,8 @@
-## [Single-page Interactive](https://css-view-transition.vercel.app/interactive.html)
+## [Basic Single-page Interactive](https://css-view-transition.vercel.app/interative-basic.html)
+
+Simply renders a unordered list and reverses the order of items each time the button is clicked. Only requires a single `view-transition-name` value to be set on each `li` element. ✨
+
+## [Alternative Single-page Interactive](https://css-view-transition.vercel.app/interative.html)
 
 An example that updates the re-orders the position of squares directly on the page with JavaScript. The animations are created simply by providing each li-element with a unique "view-transition-name" value by means of inline CSS.
 
