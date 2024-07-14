@@ -1,4 +1,4 @@
-## [Basic Single-page Interactive](https://css-view-transition.vercel.app/interative-basic.html)
+## [Basic Single-page Interactive](https://css-view-transition.vercel.app/interactive-basic.html)
 
 Simply renders a unordered list and reverses the order of items each time the button is clicked. Only requires a single `view-transition-name` value to be set on each `li` element. ✨
 
