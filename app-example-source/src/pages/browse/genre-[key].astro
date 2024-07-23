@@ -1,0 +1,19 @@
+---
+import Shell from "../../components/shell.astro";
+import Shows from "../../components/shows.astro";
+import genresRef from "../../content/genres.json";
+import Genres from "../../components/genres.astro";
+
+export const getStaticPaths = () => {
+  return Object.keys(genresRef).map((key) => ({
+    params: { key },
+  }));
+};
+
+const { key } = Astro.params;
+---
+
+<Shell active="Browse">
+  <Genres active={key} />
+  <Shows filter={key} />
+</Shell>

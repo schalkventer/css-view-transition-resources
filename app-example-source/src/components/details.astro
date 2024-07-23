@@ -1,0 +1,112 @@
+---
+import content from "../content/content.json";
+import genresRef from "../content/genres.json";
+import { format } from "date-fns";
+
+export const getStaticPaths = () => {
+  return content.map((item) => ({
+    params: { id: item.id },
+  }));
+};
+
+const { id } = Astro.props;
+const match = content.find((item) => item.id === id);
+
+if (!match) {
+  Astro.meta({ status: 404 });
+}
+
+const { description, image, genres, seasons, date } =
+  match as any;
+---
+
+<style is:global>
+  .details-wrapper {
+    padding: 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .details-image {
+    height: 8rem;
+    width: 5.5rem;
+    margin-right: 1rem;
+  }
+
+  .details-genres {
+    display: flex;
+    list-style: none;
+    margin: 1rem 0;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .details-single-genre {
+    display: block;
+  }
+
+  .details-single-genre:hover {
+    background: gba(0, 0, 255, 0.1);
+  }
+
+  .details-header {
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 50em;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .details-button {
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .details-button:hover {
+    background: rgba(0, 0, 255, 0.1);
+  }
+</style>
+
+<div class="details-wrapper">
+  <div>
+    <img
+      src={image}
+      alt=""
+      class="details-image"
+      style={{
+        viewTransitionName: `shows-item-image-${id}`,
+      }}
+    />
+  </div>
+  <div>
+    <p>
+      {description}
+    </p>
+
+    <div>Seasons: {seasons}</div>
+    <div>Released: {format(date, "dd MMMM yyyy")}</div>
+
+    <ul class="details-genres">
+      {
+        genres.map((inner: string) => (
+          <li>
+            <a
+              href={`/app-example/browse/genre-${inner}`}
+              class="details-single-genre"
+            >
+              {(genresRef as any)[inner]}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

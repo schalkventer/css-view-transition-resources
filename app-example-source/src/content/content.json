@@ -1,0 +1,560 @@
+[
+  {
+    "id": "b8ddbcbe-6860-42cd-9ad0-106b5028fa75",
+    "description": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's future.",
+    "title": "Breaking Bad",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/b8ddbcbe-6860-42cd-9ad0-106b5028fa75.jpg",
+    "genres": [1, 2, 3],
+    "seasons": 5,
+    "date": "2013-09-28T22:00:00.000Z"
+  },
+  {
+    "id": "4a421308-dc18-4a04-85ce-766e9a8896cb",
+    "description": "David Attenborough returns with a new wildlife documentary that shows life in a variety of habitats.",
+    "title": "Planet Earth II",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/4a421308-dc18-4a04-85ce-766e9a8896cb.jpg",
+    "genres": [4, 5],
+    "seasons": 1,
+    "date": "2017-03-24T22:00:00.000Z"
+  },
+  {
+    "id": "713e9dec-4676-42d3-957e-04d80c700ec6",
+    "description": "A documentary series on the wildlife found on Earth. Each episode covers a different habitat: deserts, mountains, deep oceans, shallow seas, forests, caves, polar regions, fresh water, plains and jungles. Narrated by David Attenborough.",
+    "title": "Planet Earth",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/713e9dec-4676-42d3-957e-04d80c700ec6.jpg",
+    "genres": [4, 5],
+    "seasons": 1,
+    "date": "2007-02-10T22:00:00.000Z"
+  },
+  {
+    "id": "099f7ced-f2f6-4f7f-ba67-8f5b9b4137cf",
+    "description": "The story of Easy Company of the U.S. Army 101st Airborne Division and their mission in World War II Europe, from Operation Overlord to V-J Day.",
+    "title": "Band of Brothers",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/099f7ced-f2f6-4f7f-ba67-8f5b9b4137cf.jpg",
+    "genres": [2, 6, 7],
+    "seasons": 1,
+    "date": "2001-11-03T22:00:00.000Z"
+  },
+  {
+    "id": "485a12bb-39b8-40d2-a8cc-59d9060baad5",
+    "description": "In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes.",
+    "title": "Chernobyl",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/485a12bb-39b8-40d2-a8cc-59d9060baad5.jpg",
+    "genres": [2, 7, 3],
+    "seasons": 1,
+    "date": "2019-06-02T22:00:00.000Z"
+  },
+  {
+    "id": "7334e880-97bc-45b8-9af3-2c5d59e224f4",
+    "description": "The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement.",
+    "title": "The Wire",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/7334e880-97bc-45b8-9af3-2c5d59e224f4.jpg",
+    "genres": [1, 2, 3],
+    "seasons": 5,
+    "date": "2008-03-08T22:00:00.000Z"
+  },
+  {
+    "id": "6896ea1e-f8dc-44d6-9ed1-ae1b08b81bbb",
+    "description": "In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.",
+    "title": "Avatar: The Last Airbender",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/6896ea1e-f8dc-44d6-9ed1-ae1b08b81bbb.jpg",
+    "genres": [8, 9, 10],
+    "seasons": 3,
+    "date": "2008-07-18T22:00:00.000Z"
+  },
+  {
+    "id": "449a6e7b-e780-4146-8637-1e01705ce756",
+    "description": "David Attenborough returns to the world's oceans in this sequel to the acclaimed documentary filming rare and unusual creatures of the deep, as well as documenting the problems our oceans face.",
+    "title": "Blue Planet II",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/449a6e7b-e780-4146-8637-1e01705ce756.jpg",
+    "genres": [4, 5],
+    "seasons": 1,
+    "date": "2017-12-09T22:00:00.000Z"
+  },
+  {
+    "id": "9a552b3c-3ef2-4bd5-8281-8ac477647ee1",
+    "description": "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.",
+    "title": "The Sopranos",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/9a552b3c-3ef2-4bd5-8281-8ac477647ee1.jpg",
+    "genres": [1, 2],
+    "seasons": 6,
+    "date": "2007-06-09T22:00:00.000Z"
+  },
+  {
+    "id": "d2313809-dc61-418e-9737-3d04b88afbdc",
+    "description": "An exploration of our discovery of the laws of nature and coordinates in space and time.",
+    "title": "Cosmos: A Spacetime Odyssey",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/d2313809-dc61-418e-9737-3d04b88afbdc.jpg",
+    "genres": [4, 11],
+    "seasons": 1,
+    "date": "2014-06-07T22:00:00.000Z"
+  },
+  {
+    "id": "1be4f022-993e-4abd-acaa-f4c9409101a0",
+    "description": "Astronomer Carl Sagan leads us on an engaging guided tour of the various elements and cosmological theories of the universe.",
+    "title": "Cosmos",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/1be4f022-993e-4abd-acaa-f4c9409101a0.jpg",
+    "genres": [4, 11],
+    "seasons": 1,
+    "date": "1980-12-20T22:00:00.000Z"
+  },
+  {
+    "id": "af40f1cd-f3fa-48a5-ab89-189e18fa3d88",
+    "description": "Explores and unravels the mystery of how and why animals migrate, showing some of the most dramatic and compelling stories in the natural world through spectacular and innovative cinematography.",
+    "title": "Our Planet",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/af40f1cd-f3fa-48a5-ab89-189e18fa3d88.jpg",
+    "genres": [4, 5],
+    "seasons": 2,
+    "date": "2023-06-13T22:00:00.000Z"
+  },
+  {
+    "id": "66ff16fb-8df3-41a8-b463-142ff61f5ecc",
+    "description": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for a millennia.",
+    "title": "Game of Thrones",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/66ff16fb-8df3-41a8-b463-142ff61f5ecc.jpg",
+    "genres": [9, 10, 2],
+    "seasons": 8,
+    "date": "2019-05-18T22:00:00.000Z"
+  },
+  {
+    "id": "ef96bcd7-e0cd-455c-bac2-dea4142a0c48",
+    "description": "A groundbreaking 26-part documentary series narrated by the actor Laurence Olivier about the deadliest conflict in history, World War II.",
+    "title": "The World at War",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/ef96bcd7-e0cd-455c-bac2-dea4142a0c48.jpg",
+    "genres": [4, 7, 6],
+    "seasons": 1,
+    "date": "1974-05-07T22:00:00.000Z"
+  },
+  {
+    "id": "fce30d2a-37c0-493f-a85c-e2cffc950794",
+    "description": "The slice-of-life adventures of an Australian Blue Heeler Cattle Dog puppy as she has fun with her family and friends in everyday situations.",
+    "title": "Bluey",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/fce30d2a-37c0-493f-a85c-e2cffc950794.jpg",
+    "genres": [8, 12],
+    "seasons": 1,
+    "date": "2019-04-23T22:00:00.000Z"
+  },
+  {
+    "id": "92b8986d-f7fe-446f-a196-17057b24cffe",
+    "description": "Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes awry and leaves them in damaged physical forms.",
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/92b8986d-f7fe-446f-a196-17057b24cffe.jpg",
+    "genres": [8, 9, 10],
+    "seasons": 1,
+    "date": "2010-03-27T22:00:00.000Z"
+  },
+  {
+    "id": "e68c5976-e946-4d43-ba94-092764b24634",
+    "description": "Charting the rise of the 1990s Chicago Bulls, led by Michael Jordan, one of the most notable dynasties in sports history.",
+    "title": "The Last Dance",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/e68c5976-e946-4d43-ba94-092764b24634.jpg",
+    "genres": [4, 13, 14],
+    "seasons": 1,
+    "date": "2020-05-16T22:00:00.000Z"
+  },
+  {
+    "id": "7938c24e-dbe5-4b53-97c8-4670aae17d34",
+    "description": "David Attenborough's legendary BBC crew explains and shows wildlife all over planet earth. From giving an overview of the challenges facing life to hunting the deep sea and various major evolutionary groups of creatures.",
+    "title": "Life",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/7938c24e-dbe5-4b53-97c8-4670aae17d34.jpg",
+    "genres": [4, 5],
+    "seasons": 1,
+    "date": "2009-01-10T22:00:00.000Z"
+  },
+  {
+    "id": "80859ab5-46b4-461e-b496-cc2e8bccad57",
+    "description": "Ordinary people find themselves in extraordinarily astounding situations, which they each try to solve in a remarkable manner.",
+    "title": "The Twilight Zone",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/80859ab5-46b4-461e-b496-cc2e8bccad57.jpg",
+    "genres": [2, 15, 16],
+    "seasons": 5,
+    "date": "1964-06-18T22:00:00.000Z"
+  },
+  {
+    "id": "c90488a8-cde2-4d01-901a-522816100fd7",
+    "description": "The quirky spin on Conan Doyle's iconic sleuth pitches him as a \"high-functioning sociopath\" in modern-day London. Assisting him in his investigations: Afghanistan War vet John Watson, who's introduced to Holmes by a mutual acquaintance.",
+    "title": "Sherlock",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/c90488a8-cde2-4d01-901a-522816100fd7.jpg",
+    "genres": [1, 2, 17],
+    "seasons": 4,
+    "date": "2017-01-14T22:00:00.000Z"
+  },
+  {
+    "id": "f534959a-ac86-494a-bae2-33a4edd525d6",
+    "description": "A comprehensive history of the United States' involvement in the bitterly divisive armed conflict in Southeast Asia.",
+    "title": "The Vietnam War",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/f534959a-ac86-494a-bae2-33a4edd525d6.jpg",
+    "genres": [4, 7, 6],
+    "seasons": 1,
+    "date": "2017-09-27T22:00:00.000Z"
+  },
+  {
+    "id": "da992665-d1c7-47f1-84c1-7df1d3bedbab",
+    "description": "The Dark Knight battles crime in Gotham City with occasional help from Robin and Batgirl.",
+    "title": "Batman: The Animated Series",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/da992665-d1c7-47f1-84c1-7df1d3bedbab.jpg",
+    "genres": [8, 9, 10],
+    "seasons": 4,
+    "date": "1995-09-14T22:00:00.000Z"
+  },
+  {
+    "id": "9b80fe01-7683-4537-86e0-a169f368cac9",
+    "description": "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+    "title": "Attack on Titan",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/9b80fe01-7683-4537-86e0-a169f368cac9.jpg",
+    "genres": [8, 9, 2],
+    "seasons": 1,
+    "date": "2013-09-28T22:00:00.000Z"
+  },
+  {
+    "id": "1164b939-e057-40d9-940c-c13e6e5b002b",
+    "description": "The rise and fall of Harshad Mehta, a stockbroker who single-handedly took the stock market to great heights, is depicted.",
+    "title": "Scam 1992: The Harshad Mehta Story",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/1164b939-e057-40d9-940c-c13e6e5b002b.jpg",
+    "genres": [13, 1, 2],
+    "seasons": 1,
+    "date": "2020-10-08T22:00:00.000Z"
+  },
+  {
+    "id": "94ff52dc-810c-4d37-8d00-5b4945be44a0",
+    "description": "A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.",
+    "title": "The Office",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/94ff52dc-810c-4d37-8d00-5b4945be44a0.jpg",
+    "genres": [18],
+    "seasons": 9,
+    "date": "2013-05-15T22:00:00.000Z"
+  },
+  {
+    "id": "51d78f3c-aa96-48eb-8096-0e21f86470dc",
+    "description": "Mammoth series, five years in the making, taking a look at the rich tapestry of life in the world's oceans.",
+    "title": "The Blue Planet",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/51d78f3c-aa96-48eb-8096-0e21f86470dc.jpg",
+    "genres": [4, 5],
+    "seasons": 1,
+    "date": "2001-10-30T22:00:00.000Z"
+  },
+  {
+    "id": "3baeeeee-46d6-44d1-8741-09973655240e",
+    "description": "The trials and tribulations of criminal lawyer Jimmy McGill in the years leading up to his fateful run-in with Walter White and Jesse Pinkman.",
+    "title": "Better Call Saul",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/3baeeeee-46d6-44d1-8741-09973655240e.jpg",
+    "genres": [1, 2],
+    "seasons": 6,
+    "date": "2022-08-14T22:00:00.000Z"
+  },
+  {
+    "id": "5f1ed501-b892-4911-aa76-04dfd6986da9",
+    "description": "A cinematic experience bringing you the most amazing human stories in the world. Humans and wildlife surviving in the most extreme environments on Earth",
+    "title": "Human Planet",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/5f1ed501-b892-4911-aa76-04dfd6986da9.jpg",
+    "genres": [4, 5],
+    "seasons": 1,
+    "date": "2011-03-02T22:00:00.000Z"
+  },
+  {
+    "id": "d1fa398c-67df-4d5a-9937-cbc39334328b",
+    "description": "Five hundred years in the future, a renegade crew aboard a small spacecraft tries to survive as they travel the unknown parts of the galaxy and evade warring factions as well as authority agents out to get them.",
+    "title": "Firefly",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/d1fa398c-67df-4d5a-9937-cbc39334328b.jpg",
+    "genres": [10, 2, 19],
+    "seasons": 1,
+    "date": "2003-07-27T22:00:00.000Z"
+  },
+  {
+    "id": "41c8e37a-67d1-4cbc-bca7-cf1db95b472d",
+    "description": "Focuses on life and the environment in both the Arctic and Antarctic.",
+    "title": "Frozen Planet",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/41c8e37a-67d1-4cbc-bca7-cf1db95b472d.jpg",
+    "genres": [4, 5],
+    "seasons": 1,
+    "date": "2012-04-07T22:00:00.000Z"
+  },
+  {
+    "id": "3cfa88c0-2b64-451e-9a38-20efa525b6e7",
+    "description": "An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.",
+    "title": "Death Note",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/3cfa88c0-2b64-451e-9a38-20efa525b6e7.jpg",
+    "genres": [8, 1, 2],
+    "seasons": 1,
+    "date": "2007-06-25T22:00:00.000Z"
+  },
+  {
+    "id": "461f7c3a-d7e1-4b9b-9df6-5505b63436c8",
+    "description": "Comedy that follows two brothers from London's rough Peckham estate as they wheel and deal through a number of dodgy deals and search for the big score that'll make them millionaires.",
+    "title": "Only Fools and Horses",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/461f7c3a-d7e1-4b9b-9df6-5505b63436c8.jpg",
+    "genres": [18],
+    "seasons": 9,
+    "date": "2003-12-24T22:00:00.000Z"
+  },
+  {
+    "id": "6c7ad08e-b983-4d41-9d76-91969a619b81",
+    "description": "Gon Freecss aspires to become a Hunter, an exceptional being capable of greatness. With his friends and his potential, he seeks out his father, who left him when he was younger.",
+    "title": "Hunter x Hunter",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/6c7ad08e-b983-4d41-9d76-91969a619b81.jpg",
+    "genres": [8, 9, 10],
+    "seasons": 1,
+    "date": "2017-05-06T22:00:00.000Z"
+  },
+  {
+    "id": "2c92f6f2-7150-4f6c-9a60-8d122ee2a144",
+    "description": "A comprehensive survey of the American Civil War.",
+    "title": "The Civil War",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/2c92f6f2-7150-4f6c-9a60-8d122ee2a144.jpg",
+    "genres": [4, 7, 6],
+    "seasons": 1,
+    "date": "1990-09-26T22:00:00.000Z"
+  },
+  {
+    "id": "b0e3a2f0-2a1c-4c67-85a8-0443cf6cfb9d",
+    "description": "The continuing misadventures of neurotic New York City stand-up comedian Jerry Seinfeld and his equally neurotic New York City friends.",
+    "title": "Seinfeld",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/b0e3a2f0-2a1c-4c67-85a8-0443cf6cfb9d.jpg",
+    "genres": [18],
+    "seasons": 9,
+    "date": "1998-05-13T22:00:00.000Z"
+  },
+  {
+    "id": "57b1ef26-a5d6-43e4-9cfd-a8433b49541b",
+    "description": "In January 1969, The Beatles set out to write and record new songs for their first live show in more than two years, culminating in an impromptu concert atop their Savile Row studio.",
+    "title": "The Beatles: Get Back",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/57b1ef26-a5d6-43e4-9cfd-a8433b49541b.jpg",
+    "genres": [4, 20],
+    "seasons": 1,
+    "date": "2021-11-26T22:00:00.000Z"
+  },
+  {
+    "id": "11ecaa83-1f19-4010-8393-4594c4168cb7",
+    "description": "Ten television drama films, each one based on one of the Ten Commandments.",
+    "title": "The Decalogue",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/11ecaa83-1f19-4010-8393-4594c4168cb7.jpg",
+    "genres": [2],
+    "seasons": 1,
+    "date": "1989-06-23T22:00:00.000Z"
+  },
+  {
+    "id": "a9db7efc-d7ce-4fca-9104-edf63cfe46ed",
+    "description": "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
+    "title": "Cowboy Bebop",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/a9db7efc-d7ce-4fca-9104-edf63cfe46ed.jpg",
+    "genres": [8, 9, 10],
+    "seasons": 1,
+    "date": "2001-11-24T22:00:00.000Z"
+  },
+  {
+    "id": "c52f04b0-21ff-4a12-b302-c69c49ed8d60",
+    "description": "Twin siblings Dipper and Mabel Pines spend the summer at their great-uncle's tourist trap in the enigmatic Gravity Falls, Oregon.",
+    "title": "Gravity Falls",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/c52f04b0-21ff-4a12-b302-c69c49ed8d60.jpg",
+    "genres": [8, 10, 18],
+    "seasons": 2,
+    "date": "2016-02-14T22:00:00.000Z"
+  },
+  {
+    "id": "a8a31dd2-1433-4f4f-bb0c-10b187e05c3e",
+    "description": "Nathan Fielder uses his business degree and life experiences to help real small businesses turn a profit. But because of his unorthodox approach, Nathan's genuine efforts to do good often draw real people into an experience far beyond what they signed up for.",
+    "title": "Nathan for You",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/a8a31dd2-1433-4f4f-bb0c-10b187e05c3e.jpg",
+    "genres": [18, 4],
+    "seasons": 4,
+    "date": "2017-11-08T22:00:00.000Z"
+  },
+  {
+    "id": "08ffbcd7-f8fd-45c3-a5b0-68584ab6141b",
+    "description": "Former Daily Show host and correspondent John Oliver brings his persona to this weekly news satire program.",
+    "title": "Last Week Tonight with John Oliver",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/08ffbcd7-f8fd-45c3-a5b0-68584ab6141b.jpg",
+    "genres": [18, 21],
+    "seasons": 1,
+    "date": "2014-11-08T22:00:00.000Z"
+  },
+  {
+    "id": "5d94e184-74c6-4f5b-adf0-5b25db2a1c3f",
+    "description": "Five teens from Harlem become trapped in a nightmare when they're falsely accused of a brutal attack in Central Park. Based on the true story.",
+    "title": "When They See Us",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/5d94e184-74c6-4f5b-adf0-5b25db2a1c3f.jpg",
+    "genres": [13, 1, 2],
+    "seasons": 1,
+    "date": "2019-05-30T22:00:00.000Z"
+  },
+  {
+    "id": "b6043654-ddf2-4554-b14c-e080d17ec5d8",
+    "description": "The Roy family is known for controlling the biggest media and entertainment company in the world. However, their world changes when their father steps down from the company.",
+    "title": "Succession",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/b6043654-ddf2-4554-b14c-e080d17ec5d8.jpg",
+    "genres": [2],
+    "seasons": 4,
+    "date": "2023-05-27T22:00:00.000Z"
+  },
+  {
+    "id": "d9825e2c-1112-46f5-91dc-e6c60249558f",
+    "description": "This six-part series traces the Second World War, from the rise of the Nazis to the surrender of the Japanese, with detailed portraits of key figures.",
+    "title": "Apocalypse: The Second World War",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/d9825e2c-1112-46f5-91dc-e6c60249558f.jpg",
+    "genres": [4, 7, 6],
+    "seasons": 1,
+    "date": "2009-09-21T22:00:00.000Z"
+  },
+  {
+    "id": "14804e0b-ecc7-4a61-a234-bd3ea5216fa2",
+    "description": "Follows the personal and professional lives of six twenty to thirty year-old friends living in the Manhattan borough of New York City.",
+    "title": "Friends",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/14804e0b-ecc7-4a61-a234-bd3ea5216fa2.jpg",
+    "genres": [18, 23],
+    "seasons": 10,
+    "date": "2004-05-05T22:00:00.000Z"
+  },
+  {
+    "id": "d37ce52c-d2f1-4c37-8270-723b57af85cb",
+    "description": "Africa, the world's wildest continent. David Attenborough takes us on an awe-inspiring journey through one of the most diverse places in the world. We visit deserts, savannas, and jungles and meet up with some of Africa's amazing wildlife.",
+    "title": "Africa",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/d37ce52c-d2f1-4c37-8270-723b57af85cb.jpg",
+    "genres": [4, 5],
+    "seasons": 1,
+    "date": "2013-02-05T22:00:00.000Z"
+  },
+  {
+    "id": "8fb5dbd8-1c1a-407a-97cd-7118243e8246",
+    "description": "Five comedians are set tasks challenging their creativity and wit. The tasks are supervised by Alex Horne but the Taskmaster, Greg Davies, always has the final word.",
+    "title": "Taskmaster",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/8fb5dbd8-1c1a-407a-97cd-7118243e8246.jpg",
+    "genres": [18],
+    "seasons": 1,
+    "date": "2015-08-31T22:00:00.000Z"
+  },
+  {
+    "id": "e45e0d2e-1a6a-4719-84f8-946dc2a5df6d",
+    "description": "A story of trials and tribulations of four young entrepreneurs who quit their day jobs in order to pursue their start up venture.",
+    "title": "TVF Pitchers",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/e45e0d2e-1a6a-4719-84f8-946dc2a5df6d.jpg",
+    "genres": [2],
+    "seasons": 2,
+    "date": "2022-12-22T22:00:00.000Z"
+  },
+  {
+    "id": "7a502af0-72e7-40fe-94f9-1f60cadde210",
+    "description": "Five friends with big egos and small brains are the proprietors of an Irish pub in Philadelphia.",
+    "title": "It's Always Sunny in Philadelphia",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/7a502af0-72e7-40fe-94f9-1f60cadde210.jpg",
+    "genres": [18],
+    "seasons": 1,
+    "date": "2005-09-12T22:00:00.000Z"
+  },
+  {
+    "id": "5cd11307-b531-4be9-9ea3-7b4891ba357f",
+    "description": "The original surreal sketch comedy showcase for the Monty Python troupe.",
+    "title": "Monty Python's Flying Circus",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/5cd11307-b531-4be9-9ea3-7b4891ba357f.jpg",
+    "genres": [18],
+    "seasons": 4,
+    "date": "1974-12-04T22:00:00.000Z"
+  },
+  {
+    "id": "a0705f9a-dec5-4da3-bf11-94a1a34e1d34",
+    "description": "Inside the lives of staffers in the West Wing of the White House.",
+    "title": "The West Wing",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/a0705f9a-dec5-4da3-bf11-94a1a34e1d34.jpg",
+    "genres": [2],
+    "seasons": 7,
+    "date": "2006-05-13T22:00:00.000Z"
+  },
+  {
+    "id": "354426f7-e337-4131-9cbf-bfcfd4dcde51",
+    "description": "A World War II German U-Boat crew have a terrifying patrol mission in the early days of the war.",
+    "title": "Das Boot",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/354426f7-e337-4131-9cbf-bfcfd4dcde51.jpg",
+    "genres": [2, 6],
+    "seasons": 1,
+    "date": "1985-03-02T22:00:00.000Z"
+  },
+  {
+    "id": "4899aa33-29b5-4f2a-b701-cbb521728eed",
+    "description": "The life and times of Larry David and the predicaments he gets himself into with his friends and complete strangers.",
+    "title": "Curb Your Enthusiasm",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/4899aa33-29b5-4f2a-b701-cbb521728eed.jpg",
+    "genres": [18],
+    "seasons": 11,
+    "date": "2021-12-25T22:00:00.000Z"
+  },
+  {
+    "id": "de080c05-15f5-4f36-9f4e-1258872fa498",
+    "description": "Monkey D. Luffy sets off on an adventure with his pirate crew in hopes of finding the greatest treasure ever, known as the \"One Piece.\"",
+    "title": "One Piece",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/de080c05-15f5-4f36-9f4e-1258872fa498.jpg",
+    "genres": [8, 9, 10],
+    "seasons": 1,
+    "date": "2000-11-28T22:00:00.000Z"
+  },
+  {
+    "id": "69b1306e-bb64-4fad-8e98-e32ee7782e8f",
+    "description": "Hotel owner Basil Fawlty's incompetence, short fuse, and arrogance form a combination that ensures accidents and trouble are never far away.",
+    "title": "Fawlty Towers",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/69b1306e-bb64-4fad-8e98-e32ee7782e8f.jpg",
+    "genres": [18],
+    "seasons": 2,
+    "date": "1979-10-24T22:00:00.000Z"
+  },
+  {
+    "id": "68f0c5bd-c163-469f-a8a6-3aad0faf9bf9",
+    "description": "BoJack Horseman was the star of the hit television show \"Horsin' Around\" in the '80s and '90s, but now he's washed up, living in Hollywood, complaining about everything, and wearing colorful sweaters.",
+    "title": "BoJack Horseman",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/68f0c5bd-c163-469f-a8a6-3aad0faf9bf9.jpg",
+    "genres": [8, 18, 2],
+    "seasons": 6,
+    "date": "2020-01-30T22:00:00.000Z"
+  },
+  {
+    "id": "8a8b7607-214d-441a-8e5b-d59fd5b0fdcd",
+    "description": "While the arrival of wealthy gentlemen sends her marriage-minded mother into a frenzy, willful and opinionated Elizabeth Bennet matches wits with haughty Mr. Darcy.",
+    "title": "Pride and Prejudice",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/8a8b7607-214d-441a-8e5b-d59fd5b0fdcd.jpg",
+    "genres": [2, 23],
+    "seasons": 1,
+    "date": "1996-01-15T22:00:00.000Z"
+  },
+  {
+    "id": "5ea9a106-e290-49ac-a2c8-fab5ef413b89",
+    "description": "A high school mathlete starts hanging out with a group of burnouts while her younger brother navigates his freshman year.",
+    "title": "Freaks and Geeks",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/5ea9a106-e290-49ac-a2c8-fab5ef413b89.jpg",
+    "genres": [18, 2],
+    "seasons": 1,
+    "date": "2000-07-07T22:00:00.000Z"
+  },
+  {
+    "id": "d33ca262-340d-4e48-bbb8-70ff086a2364",
+    "description": "Stuck in the middle of World War I, Captain Edmund Blackadder does his best to escape the banality of the war.",
+    "title": "Blackadder Goes Forth",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/d33ca262-340d-4e48-bbb8-70ff086a2364.jpg",
+    "genres": [18, 7],
+    "seasons": 1,
+    "date": "1989-11-01T22:00:00.000Z"
+  },
+  {
+    "id": "62199cb2-14ad-4035-9060-3f8f93ab7f08",
+    "description": "An idiosyncratic FBI agent investigates the murder of a young woman in the even more idiosyncratic town of Twin Peaks.",
+    "title": "Twin Peaks",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/62199cb2-14ad-4035-9060-3f8f93ab7f08.jpg",
+    "genres": [1, 2, 17],
+    "seasons": 2,
+    "date": "1991-06-09T22:00:00.000Z"
+  },
+  {
+    "id": "ac46da29-2173-43c5-8ce5-a6aac65bf0fa",
+    "description": "With the help of the powerful Dragonballs, a team of fighters led by the saiyan warrior Goku defend the planet earth from extraterrestrial enemies.",
+    "title": "Dragon Ball Z",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/ac46da29-2173-43c5-8ce5-a6aac65bf0fa.jpg",
+    "genres": [8, 9, 10],
+    "seasons": 1,
+    "date": "1997-05-23T22:00:00.000Z"
+  },
+  {
+    "id": "e338ef67-afe5-4689-86be-c2b563f926dc",
+    "description": "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug kingpins who plagued the country through the years.",
+    "title": "Narcos",
+    "image": "https://epic-stream-api.netlify.app/assets/shows/e338ef67-afe5-4689-86be-c2b563f926dc.jpg",
+    "genres": [13, 1, 2],
+    "seasons": 3,
+    "date": "2017-08-31T22:00:00.000Z"
+  }
+]

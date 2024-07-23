@@ -1,0 +1,99 @@
+---
+import content from "../content/content.json";
+const { filter, limit } = Astro.props;
+let count = 0;
+
+const filtered =
+  filter === "0"
+    ? content
+    : content.filter((item) => {
+      if (limit && count >= limit) return false
+      const match = item.genres.includes(parseInt(filter))
+      if (!match) return false
+      count += 1
+      return true;
+    }
+        
+      );
+---
+
+<style is:global>
+  html::view-transition-old(.shows-item) {
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    transform: translateZ(0);
+  }
+
+  html::view-transition-new(.shows-item) {
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in;
+    transform: translateZ(0);
+  }
+
+  .shows-list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0.5rem;
+    padding: 1rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .shows-item {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    transform: scale(1);
+    height: 15rem;
+    view-transition-class: shows-item;
+
+    transition:
+      transform 0.25s,
+      background 0.25s;
+  }
+
+  .shows-item:hover {
+    transform: scale(1.025);
+    background: rgba(0, 0, 255, 0.1);
+  }
+
+  .shows-item-image {
+    height: 10rem;
+    width: 6.5rem;
+    object-f
+  }
+
+  .shows-item-title {
+    margin: 0.5rem 0 0;
+    font-size: 0.8rem;
+  }
+</style>
+
+<div class="shows-list">
+  {
+    filtered.map((item) => (
+      <a
+        class="shows-item"
+        href={`/app-example/browse/${item.id}`}
+        style={{
+          viewTransitionName: `shows-item-${item.id}`,
+        }}
+      >
+        <img
+          class="shows-item-image"
+          loading="lazy"
+          src={item.image}
+          alt=""
+          style={{
+          viewTransitionName: `shows-item-image-${item.id}`,
+        }}
+        />
+
+        <h3 class="shows-item-title" style={{
+          viewTransitionName: `shows-item-title-${item.id}`,
+        }}>{item.title}</h3>
+      </a>
+    ))
+  }
+</div>

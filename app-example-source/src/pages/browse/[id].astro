@@ -1,0 +1,103 @@
+---
+import Shell from "../../components/shell.astro";
+import Details from "../../components/details.astro";
+import content from "../../content/content.json";
+
+export const getStaticPaths = () => {
+  return content.map((item) => ({
+    params: { id: item.id },
+  }));
+};
+
+const { id } = Astro.params;
+const match = content.find((item) => item.id === id);
+
+if (!match) {
+  Astro.meta({ status: 404 });
+}
+
+const { title } = match as any;
+---
+
+<style is:global>
+  .item-wrapper {
+    padding: 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .item-image {
+    height: 8rem;
+    width: 5.5rem;
+    margin-right: 1rem;
+  }
+
+  .item-genres {
+    display: flex;
+    list-style: none;
+    margin: 1rem 0;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .item-single-genre {
+    display: block;
+  }
+
+  .item-single-genre:hover {
+    background: gba(0, 0, 255, 0.1);
+  }
+
+  .item-video {
+    width: 100%;
+    max-height: calc(100vh - 16rem);
+    background: black;
+  }
+
+  .item-header {
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 50em;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .item-close {
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item-close:hover {
+    background: rgba(0, 0, 255, 0.1);
+  }
+</style>
+
+<Shell active="Browse" header={false}>
+  <div class="item-header">
+    <h1
+      style={{
+        viewTransitionName: `shows-item-title-${id}`,
+      }}
+    >
+      {title}
+    </h1>
+    <a href="/app-example/browse" class="item-close"
+      >Close</a
+    >
+  </div>
+
+  <video
+    class="item-video"
+    src="https://epic-stream-api.netlify.app/placeholder.mp4"
+    controls></video>
+
+  <Details id={id} />
+</Shell>

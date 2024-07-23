@@ -1,0 +1,58 @@
+---
+import genresRef from "../content/genres.json";
+const { active } = Astro.props;
+const genre = (genresRef as any)[active];
+---
+
+<style is:global>
+  .genres-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+    max-width: 55rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .genres-item {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: -0.25rem 0;
+  }
+
+  .genres-item:hover {
+    background: rgba(0, 0, 255, 0.1);
+  }
+
+  .genres-header {
+    text-align: center;
+    margin: 2rem 0 1rem;
+  }
+</style>
+
+<h2 class="genres-header">{genre}</h2>
+
+<ul class="genres-list">
+  {
+    Object.entries(genresRef).map(([key, label]) => {
+      return (
+        <li>
+          <a
+            data-astro-prefetch
+            class="genres-item"
+            href={
+              key === "0"
+                ? "/app-example/browse"
+                : `/app-example/browse/genre-${key}`
+            }
+          >
+            {label}
+          </a>
+        </li>
+      );
+    })
+  }
+</ul>

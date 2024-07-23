@@ -1,0 +1,59 @@
+---
+import Shell from "../components/shell.astro";
+import Details from "../components/details.astro";
+import content from "../content/content.json";
+---
+
+<style is:global>
+  .favourites-item {
+    padding: 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid blue;
+  }
+
+  .favourites-title {
+    margin: 0;
+    transform: translateY(0.5rem);
+  }
+
+  .favourites-button {
+    margin-left: auto;
+  }
+
+  .favourites-actions {
+    display: flex;
+    gap: 1rem;
+  }
+</style>
+
+<Shell active="Favourites">
+  {
+    [
+      "099f7ced-f2f6-4f7f-ba67-8f5b9b4137cf",
+      "6896ea1e-f8dc-44d6-9ed1-ae1b08b81bbb",
+      "b8ddbcbe-6860-42cd-9ad0-106b5028fa75",
+    ].map((id) => {
+      const match = content.find((item) => item.id === id);
+      const { title } = match as any;
+
+      return (
+        <div class="favourites-item">
+          <h2 class="favourites-title">{title}</h2>
+          <Details id={id} />
+          <div class="favourites-actions">
+            <button>Remove</button>
+            <button>Move Up</button>
+            <button>Move Down</button>
+          </div>
+        </div>
+      );
+    })
+  }
+</Shell>
+
+<script>
+  console.log(123);
+</script>

@@ -1,0 +1,109 @@
+---
+const { active, header } = Astro.props;
+---
+
+<style is:global>
+  @view-transition {
+    navigation: auto;
+  }
+
+  html::view-transition-old(.main) {
+    opacity: 1;
+    background: red;
+  }
+
+  html::view-transition-new(.main) {
+    opacity: 0;
+    background: yellow;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    color: blue;
+    font-family: sans-serif;
+    overflow-y: scroll;
+  }
+
+  .shell-header {
+    border: 1px solid rgba(0, 0, 255, 0.25);
+    text-align: center;
+  }
+
+  .shell-header-list {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+
+  .shell-header-item {
+    text-decoration: none;
+    position: relative;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+
+  .shell-header-item:hover {
+    background: rgba(0, 0, 255, 0.1);
+  }
+
+  .shell-header-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: green;
+    view-transition-name: line;
+  }
+</style>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <link rel="prefetch" href="/app-example/" />
+    <link rel="prefetch" href="/app-example/browse" />
+    <link rel="prefetch" href="/app-example/favourites" />
+  </head>
+  <body>
+    {
+      header !== false && (
+        <header class="shell-header">
+          <h1>Streaming App</h1>
+
+          <nav class="shell-header-list">
+            {["Featured", "Browse", "Favourites"].map(
+              (item) => (
+                <a
+                  class="shell-header-item"
+                  href={
+                    item === "Featured"
+                      ? "/app-example/"
+                      : `/app-example/${item.toLowerCase()}`
+                  }
+                >
+                  <span>{item}</span>
+                  {active === item && (
+                    <div class="shell-header-line" />
+                  )}
+                </a>
+              )
+            )}
+          </nav>
+        </header>
+      )
+    }
+
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
