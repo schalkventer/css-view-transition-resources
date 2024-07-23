@@ -67,16 +67,26 @@ const { title } = match as any;
     align-items: center;
   }
 
-  .item-close {
+  .item-button {
     height: 4rem;
-    width: 4rem;
+    width: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(0, 0, 255, 1);
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
   }
 
-  .item-close:hover {
-    background: rgba(0, 0, 255, 0.1);
+  .item-button:hover {
+    background: rgba(0, 0, 255, 0.8);
+  }
+
+  .item-actions {
+    display: flex;
+    gap: 1rem;
   }
 </style>
 
@@ -89,9 +99,14 @@ const { title } = match as any;
     >
       {title}
     </h1>
-    <a href="/app-example/browse" class="item-close"
-      >Close</a
-    >
+
+    <div class="item-actions">
+      <div data-favourite-id={id}></div>
+
+      <a href="/app-example/browse" class="item-button"
+        >Close</a
+      >
+    </div>
   </div>
 
   <video
@@ -101,3 +116,34 @@ const { title } = match as any;
 
   <Details id={id} />
 </Shell>
+
+<script>
+  import * as local from "../../modules/local";
+
+  const favourite = document.querySelector(
+    "[data-favourite-id]"
+  );
+  if (!favourite)
+    throw new Error("No favourite element found");
+
+  const id = favourite.getAttribute("data-favourite-id");
+  if (!id) throw new Error("No ID element found");
+
+  const label = local.has(id) ? "Unfavourite" : "Favourite";
+
+  favourite.innerHTML = `
+    <button class="item-button">${label}</button>`;
+
+  favourite.addEventListener("click", () => {
+    const newValue = local.toggle(id);
+    const newLabel = newValue ? "Unfavourite" : "Favourite";
+
+    const inside = favourite.querySelector("button");
+    if (!inside) throw new Error("No button found");
+    inside.textContent = newLabel;
+  });
+</script>
+
+<!-- <button id="favourite" class="item-button"
+        >Favourite</button
+      > -->

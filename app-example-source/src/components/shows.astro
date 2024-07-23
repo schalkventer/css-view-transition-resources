@@ -7,14 +7,14 @@ const filtered =
   filter === "0"
     ? content
     : content.filter((item) => {
-      if (limit && count >= limit) return false
-      const match = item.genres.includes(parseInt(filter))
-      if (!match) return false
-      count += 1
-      return true;
-    }
-        
-      );
+        if (limit && count >= limit) return false;
+        const match = item.genres.includes(
+          parseInt(filter)
+        );
+        if (!match) return false;
+        count += 1;
+        return true;
+      });
 ---
 
 <style is:global>
@@ -61,7 +61,6 @@ const filtered =
   .shows-item-image {
     height: 10rem;
     width: 6.5rem;
-    object-f
   }
 
   .shows-item-title {
@@ -86,13 +85,18 @@ const filtered =
           src={item.image}
           alt=""
           style={{
-          viewTransitionName: `shows-item-image-${item.id}`,
-        }}
+            viewTransitionName: `shows-item-image-${item.id}`,
+          }}
         />
 
-        <h3 class="shows-item-title" style={{
-          viewTransitionName: `shows-item-title-${item.id}`,
-        }}>{item.title}</h3>
+        <h3
+          class="shows-item-title"
+          style={{
+            viewTransitionName: `shows-item-title-${item.id}`,
+          }}
+        >
+          {item.title}
+        </h3>
       </a>
     ))
   }

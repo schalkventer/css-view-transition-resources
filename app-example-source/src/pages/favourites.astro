@@ -1,7 +1,5 @@
 ---
 import Shell from "../components/shell.astro";
-import Details from "../components/details.astro";
-import content from "../content/content.json";
 ---
 
 <style is:global>
@@ -27,33 +25,174 @@ import content from "../content/content.json";
     display: flex;
     gap: 1rem;
   }
+
+  .details-wrapper {
+    padding: 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .details-image {
+    height: 8rem;
+    width: 5.5rem;
+    margin-right: 1rem;
+  }
+
+  .details-genres {
+    display: flex;
+    list-style: none;
+    margin: 1rem 0;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .details-single-genre {
+    display: block;
+  }
+
+  .details-single-genre:hover {
+    background: gba(0, 0, 255, 0.1);
+  }
+
+  .details-header {
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 50em;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .details-button {
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .details-button:hover {
+    background: rgba(0, 0, 255, 0.1);
+  }
 </style>
 
 <Shell active="Favourites">
-  {
-    [
-      "099f7ced-f2f6-4f7f-ba67-8f5b9b4137cf",
-      "6896ea1e-f8dc-44d6-9ed1-ae1b08b81bbb",
-      "b8ddbcbe-6860-42cd-9ad0-106b5028fa75",
-    ].map((id) => {
-      const match = content.find((item) => item.id === id);
-      const { title } = match as any;
-
-      return (
-        <div class="favourites-item">
-          <h2 class="favourites-title">{title}</h2>
-          <Details id={id} />
-          <div class="favourites-actions">
-            <button>Remove</button>
-            <button>Move Up</button>
-            <button>Move Down</button>
-          </div>
-        </div>
-      );
-    })
-  }
+  <div data-favourites-root></div>
 </Shell>
 
 <script>
-  console.log(123);
+  import content from "../content/content.json";
+  import genresRef from "../content/genres.json";
+  import { format } from "date-fns";
+  import * as local from "../modules/local";
+
+  const element = document.querySelector(
+    "[data-favourites-root]"
+  );
+
+  if (!element) throw new Error("Element not found");
+
+  const render = () => {
+    const newHTML = local
+      .get()
+      .map((id, index) => {
+        const match = content.find(
+          (item) => item.id === id
+        );
+
+        const {
+          title,
+          image,
+          description,
+          seasons,
+          date,
+          genres,
+        } = match as any;
+
+        return `
+        <div class="favourites-item" style="view-transition-name: shows-item-details-${id}">
+          <h2 class="favourites-title"><a href="/app-example/browse/${id}">${title}</a></h2>
+
+          <div class="details-wrapper">
+            <div>
+              <img
+                src="${image}"
+                alt=""
+                class="details-image"
+                style="view-transition-name: shows-item-image-${id}"
+              />
+            </div>
+            <div>
+              <p>
+                ${description}
+              </p>
+
+              <div>Seasons: ${seasons}</div>
+              <div>Released: ${format(date, "dd MMMM yyyy")}</div>
+
+              <ul class="details-genres">
+                ${genres
+                  .map(
+                    (inner: string) => `
+                    <li>
+                      <a
+                        href="/app-example/browse/genre-${inner}"
+                        class="details-single-genre"
+                      >
+                        ${(genresRef as any)[inner]}
+                      </a>
+                    </li>
+                  `
+                  )
+                  .join("")}
+              </ul>
+            </div>
+          </div>
+
+          <div class="favourites-actions">
+            <button data-favourites-actions-remove="${id}">Remove</button>
+            <button data-favourites-actions-up="${id}" ${index === 0 ? " disabled" : ""}>Move Up</button>
+            <button data-favourites-actions-down="${id}" ${index === local.get().length - 1 ? " disabled" : ""}>Move Down</button>
+          </div>
+        </div>
+      `;
+      })
+      .join("");
+
+    if (!document.startViewTransition) {
+      element.innerHTML = newHTML;
+      return;
+    }
+
+    document.startViewTransition(() => {
+      element.innerHTML = newHTML;
+    });
+  };
+
+  element.addEventListener("click", (event) => {
+    const target = event.target as HTMLElement;
+
+    const remove = target.getAttribute(
+      "data-favourites-actions-remove"
+    );
+
+    const up = target.getAttribute(
+      "data-favourites-actions-up"
+    );
+
+    const down = target.getAttribute(
+      "data-favourites-actions-down"
+    );
+
+    if (remove) local.remove(remove);
+    if (up) local.move("up", up);
+    if (down) local.move("down", down);
+    render();
+  });
+
+  render();
 </script>
