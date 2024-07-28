@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="options">
+      <label>
+        <span>Search</span>
+        <input type="text" id="search" />
+      </label>
+
+      <span>Continents</span>
+
+      <select name="continent" id="continent">
+        <option value="all">all</option>
+        <option value="asia">asia</option>
+        <option value="africa">africa</option>
+        <option value="north-america">north-america</option>
+        <option value="south-america">south-america</option>
+        <option value="europe">europe</option>
+      </select>
+
+      <span>Sorting</span>
+
+      <select name="sorting" id="sorting">
+        <option value="alphabetical">alphabetical</option>
+
+        <option value="alphabetical-reversed">
+          alphabetical-reversed
+        </option>
+
+        <option value="population">population</option>
+
+        <option value="population-reversed">
+          population-reversed
+        </option>
+      </select>
+    </div>
+
+    <ul id="list"></ul>
+  </body>
+</html>
