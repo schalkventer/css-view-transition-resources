@@ -1,7 +1,7 @@
-const http = require("http");
-const url = require("url");
+import http from "http";
+import url from "url";
 
-const alphabeticalHTML = `
+const alphabeticalHTML = /* html */ `
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -27,7 +27,7 @@ const alphabeticalHTML = `
     </html>
 `;
 
-const populationReversedHTML = `
+const populationReversedHTML = /* html */ `
     <!DOCTYPE html>
     <html lang="en">
     <head>
