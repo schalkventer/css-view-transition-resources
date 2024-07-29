@@ -244,7 +244,6 @@ const render = () => {
         <li style="view-transition-name: ${id}">
           <img
             src="${flag}"
-            alt="United States Flag"
             width="20"
             height="15"
           />

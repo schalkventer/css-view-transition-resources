@@ -1,4 +1,5 @@
 import fs from "fs";
+import { url } from "inspector";
 
 /**
  * @typedef {'asia' | 'north-america' | 'europe' | 'africa' | 'south-america'} Continent
@@ -246,6 +247,36 @@ const createHtml = (options) => {
     })
     .join("");
 
+  const links = {
+    continents: {
+      all: `./all-${sorting}.html`,
+      asia: `./asia-${sorting}.html`,
+      "north-america": `./north-america-${sorting}.html`,
+      "south-america": `./south-america-${sorting}.html`,
+      europe: `./europe-${sorting}.html`,
+      africa: `./africa-${sorting}.html`,
+    },
+    sorting: {
+      alphabetical: `./${continent}-alphabetical.html`,
+      "alphabetical-reversed": `./${continent}-alphabetical-reversed.html`,
+      population: `./${continent}-population.html`,
+      "population-reversed": `./${continent}-population-reversed.html`,
+    },
+  };
+
+  const prefetch = [
+    ...Object.values(links.continents)
+      .map((url) => {
+        return `<link rel="prefetch" href="${url}" />`;
+      })
+      .join(""),
+    ...Object.values(links.continents)
+      .map((url) => {
+        return `<link rel="prefetch" href="${url}" />`;
+      })
+      .join(""),
+  ].join("");
+
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -257,22 +288,22 @@ const createHtml = (options) => {
         />
         <link rel="stylesheet" href="./style.css" />
         <script src="./script.js" defer></script>
+        ${prefetch}
       </head>
       <body>
           <div>Continent</div>
-          <a href="./all-${sorting}.html">all</a>
-          <a href="./asia-${sorting}.html">asia</a>
-          <a href="./africa-${sorting}.html">africa</a>
-          <a href="./north-america-${sorting}.html">north-america</a>
-          <a href="./south-america-${sorting}.html">south-america</a>
-          <a href="./europe-${sorting}.html">europe</a>
+          ${Object.entries(links.continents).map(
+            ([label, url]) => {
+              return `<a href="${url}">${label}</a>`;
+            }
+          )}
     
           <div>Sorting</div>
-          <a href="./${continent}-alphabetical.html">Alphabetical</a>
-          <a href="./${continent}-alphabetical-reversed.html">Alphabetical (Reversed)</a>
-          <a href="./${continent}-population.html">Population</a>
-          <a href="./${continent}-population-reversed.html">Population  (Reversed)</a>
-
+          ${Object.entries(links.sorting).map(
+            ([label, url]) => {
+              return `<a href="${url}">${label}</a>`;
+            }
+          )}
         <ul>
           ${list}
         </ul>
