@@ -1,9 +1,17 @@
+<!-- omit in toc -->
 # ✨ CSS View Transitions Resources
 
 ⭐ **If you find this content useful please give it a star on Github.** ⭐
 
 - [Video Overview](#video-overview)
-- [Slides Link](#slides-file)
+- [Slides Link](#slides-link)
+- [Examples](#examples)
+  - ["Hello World"](#hello-world)
+  - [Basic Sorting](#basic-sorting)
+  - [Static Site Generation (SSG)](#static-site-generation-ssg)
+  - [Server Side Rendering (SSR)](#server-side-rendering-ssr)
+  - [Client-side JavaScript](#client-side-javascript)
+  - [Using with React](#using-with-react)
 
 ## Video Overview
 
@@ -24,3 +32,24 @@
 
 ## Examples
 
+### "Hello World"
+
+...
+
+### Basic Sorting
+
+...
+
+### Static Site Generation (SSG)
+
+...
+
+### Server Side Rendering (SSR)
+
+...
+
+### Client-side JavaScript
+
+...
+
+### Using with React
