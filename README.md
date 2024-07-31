@@ -37,7 +37,8 @@
 
 Note that it is assumed you merely care about the code that was used to create the examples, and that actually testing the examples out are of secondary concern. For this reason, they aren't deployed anywhere online. However, you are welcome to clone/download this repository and then follow the steps below, if you want to see them in action.
 
-## "Hello World"
+## "Hello World" (`examples/basic-intro`)
+
 
 <a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/basic-intro">
   <img src="https://github.com/user-attachments/assets/99555850-ed74-4ef3-9c1d-f6256bf3bc58" width="500">
@@ -45,9 +46,11 @@ Note that it is assumed you merely care about the code that was used to create t
 
 - You should be able to open either `index.html` or `reversed.html` directly in your browser as a starting point.
 
-## Basic Sorting
+## Basic Sorting (`examples/basic-sorting`)
 
-...
+<a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/basic-sorting">
+  <img src="https://github.com/user-attachments/assets/a4bc8a23-63ff-4ed9-986b-134c06153d39" width="500">
+</a>
 
 ## Static Site Generation (SSG)
 
