@@ -52,6 +52,10 @@ Note that it is assumed you merely care about the code that was used to create t
   <img src="https://github.com/user-attachments/assets/a4bc8a23-63ff-4ed9-986b-134c06153d39" width="500">
 </a>
 
+- This example uses an external stylesheet, so it is recommended that you run it through HTTP (and not open the file directly)
+- If you are using VS Code, then you can use the following extension: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+- Alternatively, you should be able to use any server emulation software as well (for example XAMPP, etc.)
+
 ## Static Site Generation (SSG)
 
 ...
