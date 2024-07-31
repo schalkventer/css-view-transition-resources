@@ -1,7 +1,7 @@
 # ✨ CSS View Transitions Resources
 
 [![](https://img.shields.io/github/stars/schalkventer/css-view-transition-resources?style=social)](https://github.com/schalkventercss-view-transition-resources)<br>
-**If you find this content useful please give it a star.**
+**If you find this content useful please give it a star so that I know to keep adding to it.**
 
 - [Video Overview](#video-overview)
 - [Slides Link](#slides-file)
