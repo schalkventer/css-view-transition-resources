@@ -79,8 +79,6 @@ If you want to test the example above you need [Node](https://nodejs.org/en) ins
   <img src="https://github.com/user-attachments/assets/5a5e9a15-b386-4649-8796-be519dca9d2d" width="500">
 </a>
 
-
-
 Similar to the above you need HTTP and Node if you want to run the actual example. However, if you are doing purely server-side rendering you are probably using Express / NestJS / Fastify (Node), Django / Flask (Python), or Laravel / Wordpress (PHP). However, the `server.mjs` file in the example is just to show the concept with as minimal code as possible. You can start the server by running `node server.mjs`.
 
 ## With JavaScript
@@ -93,12 +91,17 @@ Similar to the above you need HTTP and Node if you want to run the actual exampl
 
 ...
 
+### Custom Animations ([examples/custom-animations](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/custom-animations))
+
+<a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/custom-animations">
+  <img src="https://github.com/user-attachments/assets/01a4e7f7-4609-4c9c-a7d2-a20b1e885f06" width="500">
+</a>
+
 ### Using with React ([examples/filtering-react](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react))
 
 <a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react">
   <img src="https://github.com/user-attachments/assets/883ea300-3ae8-4854-8bc4-22080c44075b" width="500">
 </a>
-
 
 ## Other Examples
 
