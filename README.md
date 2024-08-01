@@ -39,7 +39,7 @@
 
 # Examples
 
-Note that it is assumed you merely care about the code that was used to create the examples, and that actually testing the examples out are of secondary concern. For this reason, they aren't deployed anywhere online. However, you are welcome to clone/download this repository and then follow the steps below, if you want to see them in action.
+Note that it is assumed you merely care about the code that was used to create the examples, and that actually testing the examples out are of secondary concern. For this reason, they aren't deployed online. However, you are welcome to clone/download this repository and then follow the steps below, if you want to see them in action.
 
 ## "Hello World" ([examples/basic-intro](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/basic-intro))
 
