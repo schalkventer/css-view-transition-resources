@@ -14,26 +14,27 @@
   - [Client-side JavaScript](#client-side-javascript)
   - [Using with React](#using-with-react)
 
-# Presentation
+# Overview
 
 <table>
-  <tr>
-    <td><h2><a href="https://www.youtube.com/watch?v=cGbKAqrul0w">Video Overview</a></h2></td>
-    <td><h2><a href="https://slides.com/schalkventer/css-view-animations">Slides Link</a></h2></td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.youtube.com/watch?v=cGbKAqrul0w">
-        <img src="https://github.com/user-attachments/assets/dece5c8b-4d8f-424c-b530-9efb9b18775c" width="400">
-      </a>
-    </td>
+<tr>
+  <td><h2><a href="https://www.youtube.com/watch?v=cGbKAqrul0w">Video Overview</a></h2></td>
+  <td><h2><a href="https://slides.com/schalkventer/css-view-animations">Slides Link</a></h2></td>
+</tr>
+  
+<tr>
+<td>
+  <a href="https://www.youtube.com/watch?v=cGbKAqrul0w">
+    <img src="https://github.com/user-attachments/assets/dece5c8b-4d8f-424c-b530-9efb9b18775c" width="400">
+  </a>
+</td>
     
-    <td>
-      <a href="https://slides.com/schalkventer/css-view-animations">
-        <img src="https://github.com/user-attachments/assets/c41a5c2b-2e93-47e4-9d36-3ca238871e48" width="400">
-      </a>
-    </td>
-  </tr>
+<td>
+  <a href="https://slides.com/schalkventer/css-view-animations">
+    <img src="https://github.com/user-attachments/assets/c41a5c2b-2e93-47e4-9d36-3ca238871e48" width="400">
+  </a>
+</td>
+</tr>
 </table>
 
 # Examples
