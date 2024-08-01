@@ -83,11 +83,15 @@ Similar to the above you need HTTP and Node if you want to run the actual exampl
 
 ## With JavaScript
 
-### Vanilla JavaScript
+### Vanilla JavaScript ([examples/filtering-client](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-client))
+
+<a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react">
+  <img src="https://github.com/user-attachments/assets/a07aed61-49a9-4b01-928e-3f0a56f4602c" width="500">
+</a>
 
 ...
 
-### Using with React  ([examples/filtering-react](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react))
+### Using with React ([examples/filtering-react](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react))
 
 <a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react">
   <img src="https://github.com/user-attachments/assets/883ea300-3ae8-4854-8bc4-22080c44075b" width="500">
