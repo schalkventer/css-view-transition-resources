@@ -13,6 +13,8 @@
   - [With JavaScript](#with-javascript)
     - [Vanilla JavaScript (examples/filtering-client)](#vanilla-javascript-examplesfiltering-client)
     - [Using with React (examples/filtering-react)](#using-with-react-examplesfiltering-react)
+    - [Custom Animations (examples/custom-animations)](#custom-animations-examplescustom-animations)
+    - [Using with React (examples/filtering-react)](#using-with-react-examplesfiltering-react-1)
   - [Other Examples](#other-examples)
   - [Reading Material](#reading-material)
 
@@ -79,8 +81,6 @@ If you want to test the example above you need [Node](https://nodejs.org/en) ins
   <img src="https://github.com/user-attachments/assets/5a5e9a15-b386-4649-8796-be519dca9d2d" width="500">
 </a>
 
-
-
 Similar to the above you need HTTP and Node if you want to run the actual example. However, if you are doing purely server-side rendering you are probably using Express / NestJS / Fastify (Node), Django / Flask (Python), or Laravel / Wordpress (PHP). However, the `server.mjs` file in the example is just to show the concept with as minimal code as possible. You can start the server by running `node server.mjs`.
 
 ## With JavaScript
@@ -93,13 +93,27 @@ Similar to the above you need HTTP and Node if you want to run the actual exampl
 
 ...
 
+<<<<<<< HEAD
 ### Using with React ([examples/filtering-react](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react))
 
+=======
+### Custom Animations ([examples/custom-animations](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/custom-animations))
+
+<a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/custom-animations">
+  <img src="https://github.com/user-attachments/assets/01a4e7f7-4609-4c9c-a7d2-a20b1e885f06" width="500">
+</a>
+
+### Using with React ([examples/filtering-react](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react))
+
+>>>>>>> 1c0ab1c75eaf781203258c2612531ee9852f73dc
 <a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react">
   <img src="https://github.com/user-attachments/assets/883ea300-3ae8-4854-8bc4-22080c44075b" width="500">
 </a>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1c0ab1c75eaf781203258c2612531ee9852f73dc
 ## Other Examples
 
 - [Astro Records](https://astro-records.pages.dev/)
@@ -109,4 +123,8 @@ Similar to the above you need HTTP and Node if you want to run the actual exampl
 
 - [Pattern: View Transitions](https://www.patterns.dev/vanilla/view-transitions/)
 - [Chrome for Developers: Smooth transitions with the View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions)
+<<<<<<< HEAD
 - [Dave Rupert: Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/)
+=======
+- [Dave Rupert: Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/)
+>>>>>>> 1c0ab1c75eaf781203258c2612531ee9852f73dc
