@@ -42,7 +42,13 @@
 </tr>
 </table>
 
-# Examples
+# Full Example
+
+<a href="https://css-view-transition.vercel.app">
+  <img src="https://github.com/user-attachments/assets/f9b9d349-c66c-410f-96e3-736d436b8b7d" width="500">
+</a>
+
+## Basic Examples
 
 Note that it is assumed you merely care about the code that was used to create the examples, and that actually testing the examples out are of secondary concern. For this reason, they aren't deployed online. However, you are welcome to clone/download this repository and then follow the steps below, if you want to see them in action.
 
