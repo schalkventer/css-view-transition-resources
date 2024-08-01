@@ -16,25 +16,23 @@
 
 # Presentation
 
-<div style="float: left">
-  <h2>Video Overview</h2>
-  
-  [https://www.youtube.com/watch?v=cGbKAqrul0w](https://www.youtube.com/watch?v=cGbKAqrul0w)
-  
+<table>
+  <tr>
+    <td>
+  <h2><a href="https://www.youtube.com/watch?v=cGbKAqrul0w">Video Overview</a></h2>
   <a href="https://www.youtube.com/watch?v=cGbKAqrul0w">
-    <img src="https://github.com/user-attachments/assets/dece5c8b-4d8f-424c-b530-9efb9b18775c" width="300">
+    <img src="https://github.com/user-attachments/assets/dece5c8b-4d8f-424c-b530-9efb9b18775c" width="400">
   </a>
-</div>
+</td>
 
-<div style="float: right">
-  <h2>Slides Link</h2>
-  
-  [https://slides.com/schalkventer/css-view-animations](https://slides.com/schalkventer/css-view-animations)
-  
+<td>
+  <h2><a href="https://slides.com/schalkventer/css-view-animations">Slides Link</a></h2>
   <a href="https://slides.com/schalkventer/css-view-animations">
-    <img src="https://github.com/user-attachments/assets/c41a5c2b-2e93-47e4-9d36-3ca238871e48" width="300">
+    <img src="https://github.com/user-attachments/assets/c41a5c2b-2e93-47e4-9d36-3ca238871e48" width="400">
   </a>
-</div>
+</td>
+</tr>
+</table>
 
 # Examples
 
