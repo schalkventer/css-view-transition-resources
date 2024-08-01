@@ -12,9 +12,8 @@
     - [Server Side Rendering (SSR) (examples/filtering-ssr)](#server-side-rendering-ssr-examplesfiltering-ssr)
   - [With JavaScript](#with-javascript)
     - [Vanilla JavaScript (examples/filtering-client)](#vanilla-javascript-examplesfiltering-client)
-    - [Using with React (examples/filtering-react)](#using-with-react-examplesfiltering-react)
     - [Custom Animations (examples/custom-animations)](#custom-animations-examplescustom-animations)
-    - [Using with React (examples/filtering-react)](#using-with-react-examplesfiltering-react-1)
+    - [Using with React (examples/filtering-react)](#using-with-react-examplesfiltering-react)
   - [Other Examples](#other-examples)
   - [Reading Material](#reading-material)
 
@@ -112,8 +111,4 @@ Similar to the above you need HTTP and Node if you want to run the actual exampl
 
 - [Pattern: View Transitions](https://www.patterns.dev/vanilla/view-transitions/)
 - [Chrome for Developers: Smooth transitions with the View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions)
-<<<<<<< HEAD
 - [Dave Rupert: Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/)
-=======
-- [Dave Rupert: Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/)
->>>>>>> 1c0ab1c75eaf781203258c2612531ee9852f73dc
