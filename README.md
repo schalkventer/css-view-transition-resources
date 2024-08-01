@@ -14,6 +14,7 @@
     - [Vanilla JavaScript (examples/filtering-client)](#vanilla-javascript-examplesfiltering-client)
     - [Custom Animations (examples/custom-animations)](#custom-animations-examplescustom-animations)
     - [Using with React (examples/filtering-react)](#using-with-react-examplesfiltering-react)
+    - [Full Site (Astro SSG) (examples/full-site)](#full-site-astro-ssg-examplesfull-site)
   - [Other Examples](#other-examples)
   - [Reading Material](#reading-material)
 
@@ -101,6 +102,13 @@ Similar to the above you need HTTP and Node if you want to run the actual exampl
 <a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react">
   <img src="https://github.com/user-attachments/assets/883ea300-3ae8-4854-8bc4-22080c44075b" width="500">
 </a>
+
+### Full Site (Astro SSG) ([examples/full-site](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/full-site))
+
+<a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/full-site">
+  <img src="https://github.com/user-attachments/assets/5a5e9a15-b386-4649-8796-be519dca9d2d" width="500">
+</a>
+
 
 ## Other Examples
 

@@ -1,2 +1,0 @@
-import{h as r,t as i}from"./local.C8JR9Qy2.js";const t=document.querySelector("[data-favourite-id]");if(!t)throw new Error("No favourite element found");const e=t.getAttribute("data-favourite-id");if(!e)throw new Error("No ID element found");const u=r(e)?"Unfavourite":"Favourite";t.innerHTML=`
-    <button class="item-button">${u}</button>`;t.addEventListener("click",()=>{const n=i(e)?"Unfavourite":"Favourite",o=t.querySelector("button");if(!o)throw new Error("No button found");o.textContent=n});
