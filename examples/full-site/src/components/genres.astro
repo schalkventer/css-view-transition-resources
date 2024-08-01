@@ -43,11 +43,7 @@ const genre = (genresRef as any)[active];
           <a
             data-astro-prefetch
             class="genres-item"
-            href={
-              key === "0"
-                ? "/app-example/browse"
-                : `/app-example/browse/genre-${key}`
-            }
+            href={key === "0" ? "/browse" : `/browse/genre-${key}`}
           >
             {label}
           </a>

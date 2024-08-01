@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-11rem) scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(11rem) scale(0.8);
+  }
+}
+
+html::view-transition-old(forward) {
+  animation-duration: 0.4s;
+  animation-name: slide-out;
+}
+
+html::view-transition-new(forward) {
+  animation-duration: 0.4s;
+  animation-name: slide-in;
+}
+
+html::view-transition-old(back) {
+  animation-duration: 0.2s;
+  animation-name: slide-in;
+  animation-direction: reverse;
+}
+
+html::view-transition-new(back) {
+  animation-duration: 0.2s;
+  animation-name: slide-out;
+  animation-direction: reverse;
+}
+
+@media (prefers-reduced-motion) {
+  html::view-transition {
+    display: none;
+  }
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  gap: 3rem;
+}
+
+div {
+  text-align: center;
+  position: fixed;
+  padding: 1rem 2rem;
+  background: black;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: sans-serif;
+  color: white;
+  display: none;
+}
+
+@supports not (view-transition-name: example) {
+  div {
+    display: block;
+  }
+}
+
+button {
+  border: 1px solid blue;
+  height: 5rem;
+  width: 5rem;
+  background: rgba(0, 0, 255, 1);
+  border-radius: 8px;
+  color: white;
+  font-size: 4rem;
+  cursor: pointer;
+  view-transition-clase: button;
+  user-select: none;
+  border: 3px solid blue;
+  line-height: 1;
+}
+
+button:focus-visible {
+  border: 3px solid white;
+  outline: 6px solid black;
+}
+
+button:hover {
+  background: rgba(0, 0, 255, 0.8);
+}
+
+button:active {
+  background: rgba(0, 0, 255, 0.7);
+}
+
+span {
+  font-size: 6em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  text-align: center;
+  height: 10rem;
+  padding: 0 1rem;
+  border-radius: 32px;
+  color: blue;
+  background: rgba(0, 0, 255, 0.05);
+  view-transition-name: forward;
+}
+
+span.reverse {
+  view-transition-name: back;
+}

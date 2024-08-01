@@ -64,14 +64,11 @@ const { active, header } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="prefetch" href="/app-example/" />
-    <link rel="prefetch" href="/app-example/browse" />
-    <link rel="prefetch" href="/app-example/favourites" />
+    <link rel="prefetch" href="/" />
+    <link rel="prefetch" href="/browse" />
+    <link rel="prefetch" href="/favourites" />
   </head>
   <body>
     {
@@ -80,23 +77,15 @@ const { active, header } = Astro.props;
           <h1>Streaming App</h1>
 
           <nav class="shell-header-list">
-            {["Featured", "Browse", "Favourites"].map(
-              (item) => (
-                <a
-                  class="shell-header-item"
-                  href={
-                    item === "Featured"
-                      ? "/app-example/"
-                      : `/app-example/${item.toLowerCase()}`
-                  }
-                >
-                  <span>{item}</span>
-                  {active === item && (
-                    <div class="shell-header-line" />
-                  )}
-                </a>
-              )
-            )}
+            {["Featured", "Browse", "Favourites"].map((item) => (
+              <a
+                class="shell-header-item"
+                href={item === "Featured" ? "/" : `/${item.toLowerCase()}`}
+              >
+                <span>{item}</span>
+                {active === item && <div class="shell-header-line" />}
+              </a>
+            ))}
           </nav>
         </header>
       )

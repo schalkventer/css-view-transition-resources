@@ -16,8 +16,7 @@ if (!match) {
   Astro.meta({ status: 404 });
 }
 
-const { description, image, genres, seasons, date } =
-  match as any;
+const { description, image, genres, seasons, date } = match as any;
 ---
 
 <style is:global>
@@ -98,10 +97,7 @@ const { description, image, genres, seasons, date } =
       {
         genres.map((inner: string) => (
           <li>
-            <a
-              href={`/app-example/browse/genre-${inner}`}
-              class="details-single-genre"
-            >
+            <a href={`/browse/genre-${inner}`} class="details-single-genre">
               {(genresRef as any)[inner]}
             </a>
           </li>

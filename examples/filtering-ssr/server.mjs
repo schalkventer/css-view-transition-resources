@@ -1,54 +1,6 @@
 import http from "http";
 import url from "url";
 
-/**
- * @typedef {'asia' | 'north-america' | 'europe' | 'africa' | 'south-america'} Continent
- */
-
-/**
- * @typedef {'alphabetical' | 'alphabetical-reversed' | 'population' | 'population-reversed'} Sorting
- */
-
-/**
- * @typedef {object} Country
- * @prop {string} id
- * @prop {string} flag
- * @prop {string} name
- * @prop {number} population
- * @prop {Continent} continent
- */
-
-/**
- * @typedef {object} Options
- * @prop {Sorting} sorting
- * @prop {'all' | Continent} continent
- */
-
-/**
- * @type {object}
- * @prop {Sorting[]} sorting
- * @prop {('all' | Continent)[]} continents
- */
-const arrays = {
-  continents: [
-    "all",
-    "asia",
-    "north-america",
-    "south-america",
-    "europe",
-    "africa",
-  ],
-  sorting: [
-    "alphabetical",
-    "alphabetical-reversed",
-    "population",
-    "population-reversed",
-  ],
-};
-
-/**
- * @type {Country[]}
- */
 const data = [
   {
     id: "bd",
@@ -192,29 +144,18 @@ const data = [
   },
 ];
 
-/**
- *
- * @param {Options} options
- * @returns {string}
- */
-
 const createHtml = (options) => {
   const { continent, sorting, search } = options;
 
   const filtered = data.filter((country) => {
     if (
       search !== "" &&
-      !country.name
-        .toLowerCase()
-        .includes(search.toLowerCase())
+      !country.name.toLowerCase().includes(search.toLowerCase())
     ) {
       return false;
     }
 
-    if (
-      continent !== "all" &&
-      country.continent !== continent
-    ) {
+    if (continent !== "all" && country.continent !== continent) {
       return false;
     }
 
@@ -322,12 +263,8 @@ const createHtml = (options) => {
 const server = http.createServer((req, res) => {
   const parsed = new URL(req.url, "http://localhost:3000/");
 
-  const continent =
-    parsed.searchParams.get("continent") || "all";
-
-  const sorting =
-    parsed.searchParams.get("sorting") || "alphabetical";
-
+  const continent = parsed.searchParams.get("continent") || "all";
+  const sorting = parsed.searchParams.get("sorting") || "alphabetical";
   const search = parsed.searchParams.get("search") || "";
 
   res.writeHead(200, { "Content-Type": "text/html" });

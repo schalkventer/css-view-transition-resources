@@ -8,9 +8,7 @@ const filtered =
     ? content
     : content.filter((item) => {
         if (limit && count >= limit) return false;
-        const match = item.genres.includes(
-          parseInt(filter)
-        );
+        const match = item.genres.includes(parseInt(filter));
         if (!match) return false;
         count += 1;
         return true;
@@ -74,7 +72,7 @@ const filtered =
     filtered.map((item) => (
       <a
         class="shows-item"
-        href={`/app-example/browse/${item.id}`}
+        href={`/browse/${item.id}`}
         style={{
           viewTransitionName: `shows-item-${item.id}`,
         }}

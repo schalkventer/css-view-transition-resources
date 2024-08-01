@@ -90,9 +90,7 @@ import Shell from "../components/shell.astro";
   import { format } from "date-fns";
   import * as local from "../modules/local";
 
-  const element = document.querySelector(
-    "[data-favourites-root]"
-  );
+  const element = document.querySelector("[data-favourites-root]");
 
   if (!element) throw new Error("Element not found");
 
@@ -100,22 +98,14 @@ import Shell from "../components/shell.astro";
     const newHTML = local
       .get()
       .map((id, index) => {
-        const match = content.find(
-          (item) => item.id === id
-        );
+        const match = content.find((item) => item.id === id);
 
-        const {
-          title,
-          image,
-          description,
-          seasons,
-          date,
-          genres,
-        } = match as any;
+        const { title, image, description, seasons, date, genres } =
+          match as any;
 
         return `
         <div class="favourites-item" style="view-transition-name: shows-item-details-${id}">
-          <h2 class="favourites-title"><a href="/app-example/browse/${id}">${title}</a></h2>
+          <h2 class="favourites-title"><a href="/browse/${id}">${title}</a></h2>
 
           <div class="details-wrapper">
             <div>
@@ -140,7 +130,7 @@ import Shell from "../components/shell.astro";
                     (inner: string) => `
                     <li>
                       <a
-                        href="/app-example/browse/genre-${inner}"
+                        href="/browse/genre-${inner}"
                         class="details-single-genre"
                       >
                         ${(genresRef as any)[inner]}
@@ -176,17 +166,11 @@ import Shell from "../components/shell.astro";
   element.addEventListener("click", (event) => {
     const target = event.target as HTMLElement;
 
-    const remove = target.getAttribute(
-      "data-favourites-actions-remove"
-    );
+    const remove = target.getAttribute("data-favourites-actions-remove");
 
-    const up = target.getAttribute(
-      "data-favourites-actions-up"
-    );
+    const up = target.getAttribute("data-favourites-actions-up");
 
-    const down = target.getAttribute(
-      "data-favourites-actions-down"
-    );
+    const down = target.getAttribute("data-favourites-actions-down");
 
     if (remove) local.remove(remove);
     if (up) local.move("up", up);

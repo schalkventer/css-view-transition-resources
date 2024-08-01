@@ -103,9 +103,7 @@ const { title } = match as any;
     <div class="item-actions">
       <div data-favourite-id={id}></div>
 
-      <a href="/app-example/browse" class="item-button"
-        >Close</a
-      >
+      <a href="/browse" class="item-button">Close</a>
     </div>
   </div>
 
@@ -120,11 +118,8 @@ const { title } = match as any;
 <script>
   import * as local from "../../modules/local";
 
-  const favourite = document.querySelector(
-    "[data-favourite-id]"
-  );
-  if (!favourite)
-    throw new Error("No favourite element found");
+  const favourite = document.querySelector("[data-favourite-id]");
+  if (!favourite) throw new Error("No favourite element found");
 
   const id = favourite.getAttribute("data-favourite-id");
   if (!id) throw new Error("No ID element found");
