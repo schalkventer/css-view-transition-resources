@@ -85,8 +85,8 @@ import Shell from "../components/shell.astro";
 </Shell>
 
 <script>
-  import content from "../content/content.json";
-  import genresRef from "../content/genres.json";
+  import content from "../data/content.json";
+  import genresRef from "../data/genres.json";
   import { format } from "date-fns";
   import * as local from "../modules/local";
 
@@ -153,12 +153,12 @@ import Shell from "../components/shell.astro";
       })
       .join("");
 
-    if (!document.startViewTransition) {
+    if (!(document as any).startViewTransition) {
       element.innerHTML = newHTML;
       return;
     }
 
-    document.startViewTransition(() => {
+    (document as any).startViewTransition(() => {
       element.innerHTML = newHTML;
     });
   };
