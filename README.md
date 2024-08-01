@@ -91,12 +91,6 @@ Similar to the above you need HTTP and Node if you want to run the actual exampl
   <img src="https://github.com/user-attachments/assets/a07aed61-49a9-4b01-928e-3f0a56f4602c" width="500">
 </a>
 
-...
-
-<<<<<<< HEAD
-### Using with React ([examples/filtering-react](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react))
-
-=======
 ### Custom Animations ([examples/custom-animations](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/custom-animations))
 
 <a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/custom-animations">
@@ -105,15 +99,10 @@ Similar to the above you need HTTP and Node if you want to run the actual exampl
 
 ### Using with React ([examples/filtering-react](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react))
 
->>>>>>> 1c0ab1c75eaf781203258c2612531ee9852f73dc
 <a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react">
   <img src="https://github.com/user-attachments/assets/883ea300-3ae8-4854-8bc4-22080c44075b" width="500">
 </a>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 1c0ab1c75eaf781203258c2612531ee9852f73dc
 ## Other Examples
 
 - [Astro Records](https://astro-records.pages.dev/)
