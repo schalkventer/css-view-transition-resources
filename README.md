@@ -62,7 +62,7 @@ The only requirements are adding the following CSS:
 }
 ```
 
-After adding the above CSS you then need to assign a unique `view-transition-name:` via CSS (I just added it as an inline style, i.e. `<li style="view-transition-name: any-unique-identifier-value-here">` on both pages), and then browser should automatically animate the same element between the two pages as your navigate.
+After adding the above CSS you then need to assign a unique `view-transition-name:` via CSS (I just added it as an inline style, i.e. `<li style="view-transition-name: any-unique-identifier-value-here">` on the both the starting and ending pages), and then browser should automatically animate the same element between the two pages as your navigate.
 
 All code is generated as plain HTML via Astro SSG from the `src` folder. It is automatically deployed from this repo to `https://css-view-transition.vercel.app/`. All other (smaller scale) examples are in the `examples` folder.
 
