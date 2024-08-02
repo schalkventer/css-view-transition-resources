@@ -4,7 +4,8 @@
 ⭐ **If you find this content useful please give it a star on Github.** ⭐
 
 - [Overview](#overview)
-- [Examples](#examples)
+- [Full Example](#full-example)
+  - [Basic Examples](#basic-examples)
   - [Without JavaScript](#without-javascript)
     - ["Hello World" (examples/basic-intro)](#hello-world-examplesbasic-intro)
     - [Basic Sorting (examples/basic-sorting)](#basic-sorting-examplesbasic-sorting)
@@ -23,7 +24,7 @@
 
 <table>
 <tr>
-  <td><h2><a href="https://www.youtube.com/watch?v=cGbKAqrul0w">Video Overview</a></h2></td>
+  <td><h2><a href="https://www.youtube.com/watch?v=cGbKAqrul0w">YouTube Video</a></h2></td>
   <td><h2><a href="https://slides.com/schalkventer/css-view-animations">Slides Link</a></h2></td>
 </tr>
   
@@ -44,18 +45,33 @@
 
 # Full Example
 
+The following is an example demo site that uses CSS View Transitions between HTML page navigations. Note that there is no JavaScript* used here, it is exclusively just regular `<a href="">` navigations to HTML pages. You can check the URL change as you use the example. 
+
+* JavaScript is used only to save/get your selected favourites in the browser local storage, and not used in any navigations and/or animation.
+
+The only requirements are adding the following CSS:
+
+```css
+@view-transition {
+    navigation: auto;
+}
+```
+
+After adding the above CSS you then need to assign a unique `view-transition-name:` via CSS (I just added it as an inline style, i.e. `<li style="view-transition-name: any-unique-identifier-value-here">` on both pages), and then browser should automatically animate the same element between the two pages as your navigate.
+
 <a href="https://css-view-transition.vercel.app">
   <img src="https://github.com/user-attachments/assets/f9b9d349-c66c-410f-96e3-736d436b8b7d" width="500">
 </a>
 
+All code is generated as plain HTML via Astro SSG from the `src` folder. It is automatically deployed from this repo to `https://css-view-transition.vercel.app/`. All other (smaller scale) examples are in the `examples` folder.
+
 ## Basic Examples
 
-Note that it is assumed you merely care about the code that was used to create the examples, and that actually testing the examples out are of secondary concern. For this reason, they aren't deployed online. However, you are welcome to clone/download this repository and then follow the steps below, if you want to see them in action.
+Note that for these smaller examples, it is assumed that you merely care about the code used to create the examples, and that actually testing the examples out are of secondary concern. For this reason, they aren't deployed online (unlike the full demo). However, you are welcome to clone/download this repository and then follow the steps below, if you want to see them in action.
 
 ## Without JavaScript
 
 ### "Hello World" ([examples/basic-intro](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/basic-intro))
-
 
 <a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/basic-intro">
   <img src="https://github.com/user-attachments/assets/99555850-ed74-4ef3-9c1d-f6256bf3bc58" width="500">
