@@ -52,7 +52,7 @@
 
 The following is an example demo site that uses CSS View Transitions between HTML page navigations. Note that there is no JavaScript* used here, it is exclusively just regular `<a href="">` navigations to HTML pages. You can check the URL change as you use the example. 
 
-* JavaScript is used only to save/get your selected favourites in the browser local storage, and not used in any navigations and/or animation.
+\* JavaScript is used only to save/get your selected favourites in the browser local storage, and not used in any navigations and/or animation.
 
 The only requirements are adding the following CSS:
 
