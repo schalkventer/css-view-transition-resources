@@ -104,7 +104,9 @@ If you want to test the example above you need [Node](https://nodejs.org/en) ins
   <img src="https://github.com/user-attachments/assets/5a5e9a15-b386-4649-8796-be519dca9d2d" width="500">
 </a>
 
-Similar to the above you need HTTP and Node if you want to run the actual example. However, if you are doing purely server-side rendering you are probably using Express / NestJS / Fastify (Node), Django / Flask (Python), or Laravel / Wordpress (PHP). However, the `server.mjs` file in the example is just to show the concept with as minimal code as possible. You can start the server by running `node server.mjs`.
+Similar to the above you need HTTP and Node if you want to run the actual example. 
+
+However, if you are doing purely server-side rendering you are probably using Express / NestJS / Fastify (Node), Django / Flask (Python), or Laravel / Wordpress (PHP). However, the `server.mjs` file in the example is just to show the concept with as minimal code as possible. You can start the server by running `node server.mjs`.
 
 ## With JavaScript
 
@@ -113,6 +115,10 @@ Similar to the above you need HTTP and Node if you want to run the actual exampl
 <a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react">
   <img src="https://github.com/user-attachments/assets/a07aed61-49a9-4b01-928e-3f0a56f4602c" width="500">
 </a>
+
+This example is a single HTML page that simply pulls in a `script.js` file to generate the content in the browser itself with Javascript. This example is effectively the same as all examples above, but uses the JavaScript `document.startViewTransition` method instead of the `@view-transition` CSS rule.
+
+You should be able to simply open the `index.html` directly, but it is recommended that you use HTTP to serve the file locally.
 
 ### Custom Animations ([examples/custom-animations](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/custom-animations))
 
