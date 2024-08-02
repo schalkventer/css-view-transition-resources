@@ -122,11 +122,13 @@ You should be able to simply open the `index.html` directly, but it is recommend
 
 In the example the HTML is simply replaced with each change via the `innerHTML` method (instead of moving actual DOM nodes around). This is significant since it means that the animation uses the `view-transition-name` assignment, to determime when something is the same element (for animation purposes) regardless whether it is a completely newly created HTML DOM node. Note `view-transition-name` only influences the animation, and other rules around DOM references (for example focus state) still apply.
 
-### Custom Animations ([examples/custom-animations](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/custom-animations))
+### Custom Animations ([examples/custom-animations](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/animated-counter))
 
-<a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/custom-animations">
+<a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/animated-counter">
   <img src="https://github.com/user-attachments/assets/01a4e7f7-4609-4c9c-a7d2-a20b1e885f06" width="500">
 </a>
+
+In this example, there aren't any actual changes to the HTML/DOM structure. The `innerText` value of the 
 
 ### Using with React ([examples/filtering-react](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react))
 
