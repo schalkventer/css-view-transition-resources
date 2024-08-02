@@ -128,7 +128,7 @@ In the example the HTML is simply replaced with each change via the `innerHTML` 
   <img src="https://github.com/user-attachments/assets/01a4e7f7-4609-4c9c-a7d2-a20b1e885f06" width="500">
 </a>
 
-In this example, there aren't any actual changes to the HTML/DOM structure. The `innerText` value of the 
+In this example, there aren't any actual changes to the HTML/DOM structure. The `innerText` value of the `<span id="value">0</span>` is simply updated based on whether the plus/minus buttons are clicked.  
 
 ### Using with React ([examples/filtering-react](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/filtering-react))
 
@@ -136,12 +136,7 @@ In this example, there aren't any actual changes to the HTML/DOM structure. The 
   <img src="https://github.com/user-attachments/assets/883ea300-3ae8-4854-8bc4-22080c44075b" width="500">
 </a>
 
-### Full Site (Astro SSG) ([examples/full-site](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/full-site))
-
-<a href="https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/full-site">
-  <img src="https://github.com/user-attachments/assets/5a5e9a15-b386-4649-8796-be519dca9d2d" width="500">
-</a>
-
+Note that when using React, due to React automatically resolving/evaluating state updates in parallel/asynchronously under the hood you need to wrap your `document.startViewTransition` method with the `flushSync` function provided by `react-dom` (as in the example).
 
 ## Other Examples
 
