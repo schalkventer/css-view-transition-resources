@@ -45,6 +45,11 @@
 
 # Full Example
 
+ <a href="https://css-view-transition.vercel.app">
+  <img src="https://github.com/user-attachments/assets/f9b9d349-c66c-410f-96e3-736d436b8b7d" width="800">
+</a>
+
+
 The following is an example demo site that uses CSS View Transitions between HTML page navigations. Note that there is no JavaScript* used here, it is exclusively just regular `<a href="">` navigations to HTML pages. You can check the URL change as you use the example. 
 
 * JavaScript is used only to save/get your selected favourites in the browser local storage, and not used in any navigations and/or animation.
@@ -58,10 +63,6 @@ The only requirements are adding the following CSS:
 ```
 
 After adding the above CSS you then need to assign a unique `view-transition-name:` via CSS (I just added it as an inline style, i.e. `<li style="view-transition-name: any-unique-identifier-value-here">` on both pages), and then browser should automatically animate the same element between the two pages as your navigate.
-
-<a href="https://css-view-transition.vercel.app">
-  <img src="https://github.com/user-attachments/assets/f9b9d349-c66c-410f-96e3-736d436b8b7d" width="500">
-</a>
 
 All code is generated as plain HTML via Astro SSG from the `src` folder. It is automatically deployed from this repo to `https://css-view-transition.vercel.app/`. All other (smaller scale) examples are in the `examples` folder.
 
