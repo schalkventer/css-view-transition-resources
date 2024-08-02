@@ -118,7 +118,9 @@ However, if you are doing purely server-side rendering you are probably using Ex
 
 This example is a single HTML page that simply pulls in a `script.js` file to generate the content in the browser itself with Javascript. This example is effectively the same as all examples above, but uses the JavaScript `document.startViewTransition` method instead of the `@view-transition` CSS rule.
 
-You should be able to simply open the `index.html` directly, but it is recommended that you use HTTP to serve the file locally.
+You should be able to simply open the `index.html` directly, but it is recommended that you use HTTP to serve the file locally. 
+
+In the example the HTML is simply replaced with each change via the `innerHTML` method (instead of moving actual DOM nodes around). This is significant since it means that the animation uses the `view-transition-name` assignment, to determime when something is the same element (for animation purposes) regardless whether it is a completely newly created HTML DOM node. Note `view-transition-name` only influences the animation, and other rules around DOM references (for example focus state) still apply.
 
 ### Custom Animations ([examples/custom-animations](https://github.com/schalkventer/css-view-transition-resources/tree/main/examples/custom-animations))
 
