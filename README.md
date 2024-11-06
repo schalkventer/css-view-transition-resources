@@ -43,7 +43,7 @@
 </tr>
 </table>
 
-If you are interested in parallel changes in scroll-driven animations the also check out the following video Justin and myself did with a specific focus on scroll-driven animation: [https://www.youtube.com/watch?v=XpGsLlx00fU](https://www.youtube.com/watch?v=XpGsLlx00fU)
+Note that if you are interested in similar functionality in the world of scroll-driven animations then also check out the following video Justin and myself did with a specific focus on scroll-driven animation: [https://www.youtube.com/watch?v=XpGsLlx00fU](https://www.youtube.com/watch?v=XpGsLlx00fU)
 
 # Full Example
 
