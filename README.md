@@ -43,6 +43,8 @@
 </tr>
 </table>
 
+If you are interested in parallel changes in scroll-driven animations the also check out the following video Justin and myself did with a specific focus on scroll-driven animation: [https://www.youtube.com/watch?v=XpGsLlx00fU](https://www.youtube.com/watch?v=XpGsLlx00fU)
+
 # Full Example
 
  <a href="https://css-view-transition.vercel.app">
